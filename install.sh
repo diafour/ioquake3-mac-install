@@ -36,6 +36,8 @@ declare -r xpr="https://github.com/diegoulloao/ioquake3-mac-install/raw/$BRANCH/
 declare -r q3_ls="https://github.com/diegoulloao/ioquake3-mac-install/raw/$BRANCH/extras/quake3-live-sounds.pk3"
 declare -r hd_weapons="https://github.com/diegoulloao/ioquake3-mac-install/raw/$BRANCH/extras/hd-weapons.pk3"
 
+declare -r autoexec_cfg="https://github.com/diafour/ioquake3-mac-install/raw/$BRANCH/autoexec.cfg"
+
 # External
 # declare -r hi_res="http://ioquake3.org/files/xcsv_hires.zip"
 declare -r hi_res="https://download.d-l.fr/apache_listing//jeux/quake3/common/xcsv_hires.zip"
@@ -281,6 +283,17 @@ curl -L $hd_weapons > pakxy01Tv5.pk3
 
 echo "\n\n-> hd-weapons installed. 	(9 of 9)"
 
+
+# autoexec.cfg
+echo "\n
+**************************************************
+	Downloading autoexec.cfg ...
+**************************************************
+\n"
+
+curl -L $autoexec_cfg > autoexec.cfg
+
+echo "\n\n-> autoexec.cfg installed."
 
 
 # Done.
