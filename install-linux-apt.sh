@@ -68,6 +68,7 @@ echo "\n\n-> ioquake 1.36 installed. 	(1 of 9)"
 
 
 # Makes Quake3 and baseq3 dir
+mkdir -p "$HOME/.q3a/baseq3/"
 cd "$HOME/.q3a/baseq3/"
 
 
